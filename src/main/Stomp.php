@@ -526,12 +526,11 @@ class Stomp {
 			return false;
 		}
 
-        $rb = 1024;
 		$data = '';
 		$prev = '';
 
 		while (!feof($this->_socket)) {
-            $read = fread($this->_socket, $rb);
+            $read = fread($this->_socket, 1);
 
 			if ($read === FALSE) {
 				require_once 'Stomp/Exception.php';
