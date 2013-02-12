@@ -1,0 +1,11 @@
+{
+    "name": "tss/stomp-php",
+    "description": "Stomp support for PHP",
+    "license": "Apache-2.0",
+    "require": {
+        "php": ">=5.2.0,<5.3"
+    },
+    "autoload": {
+        "classmap": ["src/main/"]
+    }
+}
