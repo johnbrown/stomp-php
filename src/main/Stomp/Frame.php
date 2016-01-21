@@ -65,7 +65,7 @@ class StompFrame
         $data = $this->command . "\n";
         
         foreach ($this->headers as $name => $value) {
-            $data .= $name . ": " . $value . "\n";
+            $data .= $name . ":" . $value . "\n";
         }
         
         $data .= "\n";
@@ -73,4 +73,3 @@ class StompFrame
         return $data .= "\x00";
     }
 }
-?>
